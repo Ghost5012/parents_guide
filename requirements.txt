@@ -1,0 +1,15 @@
+Django==2.1.7
+django-cors-headers==3.2.0
+django-rest-framework==0.1.0
+djangorestframework==3.11.0
+parse==1.15.0
+parse-type==0.5.2
+Pillow==6.2.1
+pluggy==0.13.1
+py==1.8.1
+pycparser==2.20
+pymongo==3.11.2
+sqlparse==0.2.4
+wcwidth==0.1.9
+whitenoise==5.0.1
+zipp==3.1.0
