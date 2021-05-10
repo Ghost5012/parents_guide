@@ -88,8 +88,11 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'djongo',
-        'ENFORCE_SCHEMA': True,
-        'NAME':'nosql_project'
+        # 'ENFORCE_SCHEMA': True,
+        'NAME':'nosql_project1',
+        'HOST': 'mongodb+srv://%s:%s@bkresearch-t4woq.mongodb.net/test',
+        'PASSWORD': '@pen_bk+',
+        'USER': 'bk_user'
     }
 }
 
@@ -132,3 +135,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'childlocate.Parent'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Path where media is stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
